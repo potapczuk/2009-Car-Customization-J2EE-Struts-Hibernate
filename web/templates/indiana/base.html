@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>INDIANA Veículos . com . br</title>
+<style type="text/css">
+<!--
+/* CSS Reset */
+* {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+.clear {
+	clear:both;	
+}
+
+/* Links */
+a:link {
+	color: #213266;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #213266;
+}
+a:hover {
+	text-decoration: none;
+	color: #101830;
+}
+a:active {
+	text-decoration: none;
+	color: #213266;
+}
+
+/* Corpo do site */
+body {
+	background-color: #9dc7e2;
+	font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #2c3757;
+}
+#fundo-cima {
+	background: url(img/fundo_cima.png) no-repeat top center;
+}
+
+#fundo-baixo {
+	background: url(img/fundo_carros.png) no-repeat bottom center;
+	position: fixed;
+	bottom: 0;
+	z-index: -10;
+	height: 110px;
+	width: 100%;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto 110px;
+}
+
+/* Cabecalho */
+#cabecalho {
+	height:80px;
+}
+
+/* Marca */
+#marca {
+	background: url(img/marca.png) no-repeat top left;
+	width: 140px;
+	height: 37px;
+	float:left;
+	margin: 25px 0 0 25px;
+}
+#marca a {
+	display:block;
+	height:37px;
+}
+#marca h1 {
+	text-indent: -2000px;
+}
+
+/* Menu Superior */
+#menu-superior {
+	float:right;
+}
+#menu-superior ul{
+	list-style: none;
+}
+#menu-superior li{
+	float:left;
+}
+#menu-superior li.separador{
+	background: url(img/menu_superior_divisor.png) no-repeat;
+	height: 33px;
+	width: 2px;
+}
+#menu-superior a{
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 70%;
+	
+	display:block;
+	padding: 7px 8px 0;
+	background:url(img/menu_superior_fundo.png) no-repeat top center;
+	height: 33px;
+}
+#menu-superior a:hover{
+	background:url(img/menu_superior_fundo_over.png) no-repeat top center;
+	color: #d9deed;
+}
+
+#menu-superior a.primeiro{
+	background:url(img/menu_superior_fundo.png) no-repeat top left;
+	padding-left: 14px;
+}
+#menu-superior a.ultimo{
+	background:url(img/menu_superior_fundo.png) no-repeat top right;
+	padding-right: 14px;
+}
+#menu-superior a.primeiro:hover{
+	background:url(img/menu_superior_fundo_over.png) no-repeat top left;
+}
+#menu-superior a.ultimo:hover{
+	background:url(img/menu_superior_fundo_over.png) no-repeat top right;
+}
+
+/* Menu */
+#menu ul{
+	list-style: none;
+}
+#menu li{
+	float:left;
+}
+#menu a{
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 0.9em;
+	
+	display:block;
+	padding: 1.7em 0.98em 0;
+	background:url(img/menu_fundo_over.png) no-repeat top center;
+	color: #d9deed;
+	height: 34px;
+}
+#menu a:hover{
+	background:url(img/menu_fundo.png) no-repeat top center;
+	color: #213266;
+}
+#menu a.primeiro{
+	background-position:top left;
+	padding-left: 1.65em;
+}
+#menu a.ultimo{
+	background-position:top right;
+	padding-right: 1.64em;
+}
+#menu a.primeiro:hover{
+	background-position:top left;
+}
+#menu a.ultimo:hover{
+	background-position: top right;
+}
+
+/* Menu Admin */
+#menu-adm ul{
+	list-style: none;
+}
+#menu-adm li{
+	float:left;
+}
+#menu-adm a{
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 0.9em;
+	
+	display:block;
+	padding: 1.7em 2.8em 0;
+	background:url(img/menu_fundo_over.png) no-repeat top center;
+	color: #d9deed;
+	height: 34px;
+}
+#menu-adm a:hover{
+	background:url(img/menu_fundo.png) no-repeat top center;
+	color: #213266;
+}
+#menu-adm a.primeiro{
+	background-position:top left;
+	padding-left: 3em;
+}
+#menu-adm a.ultimo{
+	background-position:top right;
+	padding-right: 3em;
+}
+#menu-adm a.primeiro:hover{
+	background-position:top left;
+}
+#menu-adm a.ultimo:hover{
+	background-position: top right;
+}
+
+/* Corpo */
+#corpo {
+	min-height: 350px;
+	background: url(img/corpo_fundo.png) repeat-y top left;
+}
+
+/* Corpo Rodape */
+#corpo-rodape {
+	background: url(img/corpo_rodape.png) no-repeat top left;
+	height:41px;
+	text-align:center;
+	font-size: 60%;
+	padding-top: 4px;
+	line-height: 160%;
+}
+
+/* Rodape */
+#rodape {
+	background-color:#CCC;
+}
+
+#irtopo a{
+	display:block;
+	background: url(img/botao_subir.png) no-repeat right top;
+	width:36px;
+	height: 33px;
+	text-indent: -2000px;
+	float: right;
+}
+
+#designedby a{
+	display:block;
+	background: url(img/designed.png) no-repeat right top;
+	width: 62px;
+	height: 38px;
+	text-indent: -2000px;
+	float: right;
+	margin: 0 10px 0 15px;
+}
+-->
+</style>
+</head>
+<body>
+<div id="fundo-cima">
+    <div id="container">
+        <div id="cabecalho">
+        	<div id="marca">
+            	<h1><a href="#">Indiana veículos</a></h1>
+            </div>
+            <div id="menu-superior">
+            	<ul>
+                	<li>
+                    	<a href="#" class="primeiro">Home</a>
+                    </li>
+                    <li class="separador">
+                    </li>
+                    <li>
+                    	<a href="#">A INDIANA</a>
+                    </li>
+                    <li class="separador">
+                    </li>
+                    <li>
+                    	<a href="#">QCP</a>
+                    </li>
+                    <li class="separador">
+                    </li>
+                    <li>
+                    	<a href="#" class="ultimo">Contato</a>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="#" class="primeiro">Monte seu carro</a>
+                </li>
+                <li>
+                    <a href="#">Veículos Ford</a>
+                </li>
+                <li>
+                    <a href="#">Seminovos</a>
+                </li>
+                <li>
+                    <a href="#">Acessórios</a>
+                </li>
+                <li>
+                    <a href="#">Peças</a>
+                </li>
+                <li>
+                    <a href="#" class="ultimo">Consórcio</a>
+                </li>
+            </ul>  
+        </div>
+        <div class="clear"></div>
+        <div id="corpo">
+        
+        </div>
+        <div id="corpo-rodape">
+            © Copyright 2009 - INDIANA VEÍCULOS<br/>
+            Av. Antônio Carlos Magalhães, 4.375 - Brotas - Salvador - BA - Fone: (71) 3340-3400 
+        </div>
+        <div class="clear"></div>
+        <div id="rodape">
+			<div id="designedby">
+            	<a href="#">Designed by: Diego Potapczuk</a>
+            </div>
+        	<div id="irtopo">
+            	<a href="#cabecalho">Ir para o topo</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="fundo-baixo"></div>
+</body>
+</html>

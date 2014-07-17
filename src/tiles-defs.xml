@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+"http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+    <definition name=".site" path="/templates/indiana/site.layout.jsp">
+        <put name="title" value=""/>
+        <put name="header" value="/templates/indiana/site.header.jsp"/>
+        <put name="menu" value="/templates/indiana/site.menu.jsp"/>
+        <put name="body" value=""/>
+        <put name="footer" value="/templates/indiana/admin.footer.jsp"/>
+    </definition>
+
+    <definition name=".site.home" extends=".site">
+        <put name="title" value="Indiana Veículos"/>
+        <put name="body" value="/site/index.jsp"/>
+    </definition>
+
+    <definition name=".site.monte.carro" extends=".site">
+        <put name="title" value="Indiana Veículos: Montagem de Carro"/>
+        <put name="body" value="/site/monte/escolherCarro.jsp"/>
+    </definition>
+
+    <definition name=".site.monte.modelo" extends=".site">
+        <put name="title" value="Indiana Veículos: Montagem de Carro"/>
+        <put name="body" value="/site/monte/escolherModelo.jsp"/>
+    </definition>
+
+    <definition name=".site.monte.pintura" extends=".site">
+        <put name="title" value="Indiana Veículos: Montagem de Carro"/>
+        <put name="body" value="/site/monte/escolherPintura.jsp"/>
+    </definition>
+
+    <definition name=".site.monte.acessorios" extends=".site">
+        <put name="title" value="Indiana Veículos: Montagem de Carro"/>
+        <put name="body" value="/site/monte/escolherAcessorios.jsp"/>
+    </definition>
+
+    <definition name=".site.monte.pedido" extends=".site">
+        <put name="title" value="Indiana Veículos: Enviar pedido"/>
+        <put name="body" value="/site/monte/enviarPedido.jsp"/>
+    </definition>
+
+    <definition name=".site.monte.pedido.enviado" extends=".site">
+        <put name="title" value="Indiana Veículos: Pedido enviado"/>
+        <put name="body" value="/site/monte/pedidoEnviado.jsp"/>
+    </definition>
+
+    <definition name=".adm" path="/templates/indiana/admin.layout.jsp">
+        <put name="title" value=""/>
+        <put name="header" value="/templates/indiana/admin.header.jsp"/>
+        <put name="menu" value="/templates/indiana/admin.menu.jsp"/>
+        <put name="body" value=""/>
+        <put name="footer" value="/templates/indiana/admin.footer.jsp"/>
+    </definition>
+
+    <definition name=".adm.login" path="/templates/indiana/admin.layout.jsp">
+        <put name="title" value="Administração Indiana"/>
+        <put name="header" value="/templates/indiana/admin.header.login.jsp"/>
+        <put name="menu" value="/templates/indiana/admin.menu.login.jsp"/>
+        <put name="body" value="/admin/login/login.jsp"/>
+        <put name="footer" value="/templates/indiana/admin.footer.jsp"/>
+    </definition>
+
+    <definition name=".adm.marca" extends=".adm">
+        <put name="title" value="Administração: Marcas"/>
+        <put name="body" value="/admin/marca/marca.jsp"/>
+    </definition>
+    <definition name=".adm.marcaForm" extends=".adm">
+        <put name="title" value="Administração: Marcas"/>
+        <put name="body" value="/admin/marca/marcaForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.carro" extends=".adm">
+        <put name="title" value="Administração: Carros"/>
+        <put name="body" value="/admin/carro/carro.jsp"/>
+    </definition>
+    <definition name=".adm.carroForm" extends=".adm">
+        <put name="title" value="Administração: Carros"/>
+        <put name="body" value="/admin/carro/carroForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.modelo" extends=".adm">
+        <put name="title" value="Administração: Modelos"/>
+        <put name="body" value="/admin/modelo/modelo.jsp"/>
+    </definition>
+    <definition name=".adm.modeloForm" extends=".adm">
+        <put name="title" value="Administração: Modelos"/>
+        <put name="body" value="/admin/modelo/modeloForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.pintura" extends=".adm">
+        <put name="title" value="Administração: Pinturas"/>
+        <put name="body" value="/admin/pintura/pintura.jsp"/>
+    </definition>
+    <definition name=".adm.pinturaForm" extends=".adm">
+        <put name="title" value="Administração: Pinturas"/>
+        <put name="body" value="/admin/pintura/pinturaForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.tipoDePintura" extends=".adm">
+        <put name="title" value="Administração: Tipo de Pinturas"/>
+        <put name="body" value="/admin/tipoDePintura/tipoDePintura.jsp"/>
+    </definition>
+    <definition name=".adm.tipoDePinturaForm" extends=".adm">
+        <put name="title" value="Administração: Tipo de Pinturas"/>
+        <put name="body" value="/admin/tipoDePintura/tipoDePinturaForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.acessorio" extends=".adm">
+        <put name="title" value="Administração: Acessorios"/>
+        <put name="body" value="/admin/acessorio/acessorio.jsp"/>
+    </definition>
+    <definition name=".adm.acessorioForm" extends=".adm">
+        <put name="title" value="Administração: Acessorios"/>
+        <put name="body" value="/admin/acessorio/acessorioForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.tipoDeAcessorio" extends=".adm">
+        <put name="title" value="Administração: Tipo de Acessorio"/>
+        <put name="body" value="/admin/tipoDeAcessorio/tipoDeAcessorio.jsp"/>
+    </definition>
+    <definition name=".adm.tipoDeAcessorioForm" extends=".adm">
+        <put name="title" value="Administração: Tipo de Acessorio"/>
+        <put name="body" value="/admin/tipoDeAcessorio/tipoDeAcessorioForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.usuario" extends=".adm">
+        <put name="title" value="Administração: Usuarios"/>
+        <put name="body" value="/admin/usuario/usuario.jsp"/>
+    </definition>
+    <definition name=".adm.usuarioForm" extends=".adm">
+        <put name="title" value="Administração: Usuarios"/>
+        <put name="body" value="/admin/usuario/usuarioForm.jsp"/>
+    </definition>
+
+    <definition name=".adm.pedido" extends=".adm">
+        <put name="title" value="Administração: Pedido"/>
+        <put name="body" value="/admin/pedido/pedido.jsp"/>
+    </definition>
+    <definition name=".adm.pedidoVisualizar" extends=".adm">
+        <put name="title" value="Administração: Pedido"/>
+        <put name="body" value="/admin/pedido/pedidoVisualizar.jsp"/>
+    </definition>
+</tiles-definitions>

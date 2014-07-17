@@ -1,0 +1,801 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Reset */
+* {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+.clear {
+	clear:both;	
+}
+
+.left {
+    float: left;
+}
+
+p{
+    padding-bottom: 4px;
+}
+
+/* Links */
+a:link {
+	color: #213266;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #213266;
+}
+a:hover {
+	text-decoration: none;
+	color: #101830;
+}
+a:active {
+	text-decoration: none;
+	color: #213266;
+}
+
+/* Corpo do site */
+body {
+	background-color: #9dc7e2;
+	font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #2c3757;
+}
+#fundo-cima {
+	background: url(../img/fundo_cima.png) no-repeat top center;
+}
+
+#fundo-baixo {
+	background: url(../img/fundo_carros.png) no-repeat bottom center;
+	position: fixed;
+	bottom: 0;
+	z-index: -10;
+	height: 110px;
+	width: 100%;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto 110px;
+}
+
+/* Cabecalho */
+#cabecalho {
+	height:80px;
+}
+
+/* Marca */
+#marca {
+	background: url(../img/marca.png) no-repeat top left;
+	width: 140px;
+	height: 37px;
+	float:left;
+	margin: 25px 0 0 25px;
+}
+#marca a {
+	display:block;
+	height:37px;
+}
+#marca h1 {
+	text-indent: -2000px;
+}
+
+/* Menu Superior */
+#menu-superior {
+	float:right;
+}
+#menu-superior ul{
+	list-style: none;
+}
+#menu-superior li{
+	float:left;
+}
+#menu-superior li.separador{
+	background: url(../img/menu_superior_divisor.png) no-repeat;
+	height: 33px;
+	width: 2px;
+}
+#menu-superior a{
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 70%;
+	
+	display:block;
+	padding: 7px 8px 0;
+	background:url(../img/menu_superior_fundo.png) no-repeat 50% 0;
+	height: 26px;
+}
+
+#menu-superior a:hover{
+	background-position: 50% 100%;
+	color: #d9deed;
+}
+
+#menu-superior a.primeiro{
+    background-position: 0 0;
+	padding-left: 14px;
+}
+#menu-superior a.ultimo{
+    background-position: 100% 0;
+	padding-right: 14px;
+}
+#menu-superior a.primeiro:hover{
+    background-position: 0 100%;
+}
+#menu-superior a.ultimo:hover{
+    background-position: 100% 100%;
+}
+
+/* Menu */
+#menu ul{
+	list-style: none;
+}
+#menu li{
+	float:left;
+}
+#menu a{
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 0.9em;
+	
+	display:block;
+	padding: 1.7em 0.98em 0;
+	background:url(../img/menu_fundo.png) no-repeat top center;
+	color: #d9deed;
+	height: 33px;
+}
+#menu a:hover{
+	background-position: 50% 100%;
+	color: #213266;
+}
+#menu a.primeiro{
+	background-position:top left;
+	padding-left: 1.65em;
+}
+#menu a.ultimo{
+	background-position:top right;
+	padding-right: 1.64em;
+}
+#menu a.primeiro:hover{
+	background-position:bottom left;
+}
+#menu a.ultimo:hover{
+	background-position: bottom right;
+}
+
+/* Menu Admin */
+#menu-adm #menu-holder {
+    background:url(../img/menu_fundo.png) no-repeat bottom left;
+    height: 58px;
+    width: 100%;
+}
+
+#menu-adm #menu-holder h2 {
+    padding: 20px 0 0 20px;
+}
+
+#menu-adm ul{
+	list-style: none;
+}
+#menu-adm li{
+	float:left;
+}
+#menu-adm a{
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 90%;
+	
+	display:block;
+	padding: 25px 2.8em 0;
+	background:url(../img/menu_fundo.png) no-repeat top center;
+	color: #d9deed;
+	height: 33px;
+}
+#menu-adm a:hover{
+	background-position: 50% 100%;
+	color: #213266;
+}
+#menu-adm a.primeiro{
+	background-position: 0 0;
+	padding-left: 3em;
+}
+#menu-adm a.ultimo{
+	background-position: 100% 0;
+	padding-right: 3em;
+}
+#menu-adm a.primeiro:hover{
+	background-position: 0 100%;
+}
+#menu-adm a.ultimo:hover{
+	background-position: 100% 100%;
+}
+
+/* Corpo */
+#corpo {
+    font-size: 80%;
+	min-height: 300px;
+    padding: 10px 15px;
+	background: url(../img/corpo_fundo.png) repeat-y top left;
+}
+
+/* Corpo Rodape */
+#corpo-rodape {
+	background: url(../img/corpo_rodape.png) no-repeat top left;
+	height:41px;
+	text-align:center;
+	font-size: 60%;
+	padding-top: 4px;
+	line-height: 160%;
+}
+
+/* Rodape */
+#rodape {
+	background-color:#CCC;
+}
+
+#irtopo a{
+	display:block;
+	background: url(../img/botao_subir.png) no-repeat left top;
+	width:36px;
+	height: 37px;
+	text-indent: -2000px;
+	margin: -4px;
+	float: right;
+}
+
+#irtopo a:hover{
+	background-position: right top;
+}
+
+#designedby a{
+	display:block;
+	background: url(../img/designed.png) no-repeat right top;
+	width: 62px;
+	height: 38px;
+	text-indent: -2000px;
+	float: right;
+	margin: 4px 10px 0 15px;
+}
+
+/* Defini��o do corpo da p�gina */
+#corpo h2{
+    font-size:140%;
+    font-weight:bold;
+    padding-bottom: 10px;
+}
+
+#corpo h3{
+    font-size:130%;
+    font-weight:bold;
+    padding-bottom: 10px;
+    height: 1.6em;
+    padding: 7px 0 0 10px;
+    margin-bottom: 1em;
+    -moz-border-radius: .4em;
+    background-color: #236;
+
+    color: #fff;
+}
+
+.direita {
+    float: right;
+}
+
+/* Destaques */
+div#destaques {
+    width: 702px;
+    height: 240px;
+    background: url(../img/destaque.png) no-repeat;
+}
+
+/* Definicao de montagem de carro */
+#corpo div.carros div.carro {
+    margin: 0 16px 10px 0;
+    text-align: center;
+    float: left;
+}
+
+#corpo div.carros div.carro a{
+    width: 150px;
+    height: 80px;
+    padding: 5px;
+    display: block;
+    font-weight: bold;
+    font-size: 110%;
+    background-color: #f2f2ff;
+    border: 1px solid #225;
+    -moz-border-radius: 3em 1em;
+    line-height: 80px;
+    position: relative;
+    top: -50%;
+}
+
+#corpo div.carros div.carro a:hover{
+    background-color: #f9f9ff;
+}
+
+/* Escolha do modelo */
+
+#corpo div.modelos{
+    width: 65%;
+    float: left;
+}
+
+#corpo div.modelo{
+    border-bottom: 1px dashed #225;
+    padding-bottom: 4px;
+    margin-bottom: 9px;
+    line-height: 1.2em;
+}
+
+#corpo div.modelo label{
+    font-weight: bold;
+}
+
+/* escolha da pintura */
+#corpo div.pinturas{
+    width: 65%;
+    float: left;
+}
+
+#corpo div.pinturas .preco {
+    font-size: 80%;
+    padding-bottom: 0;
+}
+
+#corpo div.tipoDePintura{
+    border-bottom: 1px dashed #225;
+    padding-bottom: 4px;
+    margin-bottom: 9px;
+    line-height: 1.2em;
+}
+
+/* escolha da acessorios */
+#corpo div.acessorios{
+    width: 65%;
+    float: left;
+}
+
+#corpo div.tipoDeAcessorio p.tipo{
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+
+#corpo div.tipoDeAcessorio{
+    border-bottom: 1px dashed #225;
+    padding-bottom: 4px;
+    margin-bottom: 9px;
+    line-height: 1.2em;
+}
+
+#corpo div.acessorios .preco {
+    font-size: 80%;
+    padding-bottom: 0;
+}
+
+#corpo div.acessorios .descricao {
+    font-size: 80%;
+    padding-bottom: 3px;
+}
+
+/* enviar pedido */
+
+#corpo div.pedido{
+    width: 65%;
+    float: left;
+}
+
+#corpo div.pedido label{
+    font-weight: bold;
+    display: block;
+    width: 90px;
+    text-align: right;
+    float: left;
+    padding-right: 6px;
+}
+
+#corpo div.pedido p.aceito{
+    margin-top: 15px;
+    border-bottom: 1px dotted #225;
+    margin-bottom: 5px;
+}
+
+#corpo div.pedido p.aceito label{
+    display: inline;
+    float: none;
+    padding-left: 5px;
+}
+
+#corpo div.pedido p.legend{
+    font-size: 90%;
+    border-bottom: 1px dotted #225;
+    margin-bottom: 15px;
+}
+
+/* resumo */
+#corpo div.resumo{
+    width: 30%;
+    float: right;
+    border-left: 1px solid #225;
+    padding: 0px 10px 10px;
+}
+
+#corpo div.resumo p {
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+#corpo div.resumo .meu-carro strong {
+    font-size: 110%;
+    display: block;
+    padding-bottom: 10px;
+    height: 1.3em;
+    padding: 3px 0 0 6px;
+    -moz-border-radius: .2em;
+    background-color: #236;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+#corpo div.resumo .meu-carro {
+    font-weight: bold;
+}
+
+#corpo div.resumo .modelo strong{
+    display: block;
+    border-bottom: 1px solid #779;
+}
+
+#corpo div.resumo .pintura strong{
+    display: block;
+    border-bottom: 1px solid #779;
+}
+
+#corpo div.resumo .acessorios strong{
+    display: block;
+    border-bottom: 1px solid #779;
+}
+
+#corpo div.resumo .total {
+    border-top: 1px solid #779;
+    margin-top: 20px;
+}
+
+#corpo div.resumo .total span.total-titulo {
+    font-weight: bold;
+    display: block;
+    float: left;
+}
+
+#corpo div.resumo .total span.valor {
+    display: block;
+    float: right;
+}
+
+/* Defini��es do formul�rio */
+input[type=text], textarea, select, input[type=password] {
+    border: 1px solid #699ebf;
+    font-size: 85%;
+    padding: 4px;
+}
+
+#corpo form.formulario fieldset {
+    border: 1px solid #699ebf;
+    -moz-border-radius: .6em;
+    background-color: #dbeaf4;
+    padding: 6px;
+    width: 97%;
+    margin-bottom: 10px;
+}
+
+#corpo form.formulario legend {
+    border: 1px solid #699ebf;
+    -moz-border-radius: .2em;
+    background-color: #dbeaf4;
+    padding: 6px;
+    font-weight: bold;
+}
+
+#corpo form.formulario label {
+    width: 220px;
+    display: inline-block;
+    font-weight: bold;
+    text-align:right;
+}
+
+#corpo form.formulario label.checkbox {
+    display: inline;
+    font-weight:normal;
+    text-align:left;
+}
+
+#corpo form.formulario div.checkbox {
+    padding: 6px 0;
+    border-bottom: 1px dotted #699ebf;
+}
+
+#corpo form.formulario div.checkbox div {
+    margin-right: 4px;
+}
+
+#corpo form.formulario p {
+    padding: 6px 0;
+    border-bottom: 1px dotted #699ebf;
+}
+
+#corpo form.formulario p.ultimo {
+    border: none;
+}
+
+#corpo form.formulario p.botoes {
+    margin: 20px 0 6px;
+    border: none;
+}
+
+#corpo form.formulario .primeiro-botao {
+    margin-left: 224px;
+}
+
+#corpo form.login{
+    margin: 30px auto;
+    width: 310px;
+}
+
+#corpo form.login label {
+    width: 145px;
+}
+
+#corpo form.login .primeiro-botao {
+    margin-left: 134px;
+}
+
+/* Defini��o dos bot�es */
+.botoes a, .botoes button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    -moz-border-radius: .2em;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:4px 7px; /* Links */
+}
+.botoes button{
+    width:auto;
+    overflow:visible;
+    padding:4px 7px 3px 7px; /* IE6 */
+}
+.botoes button[type]{
+    padding:4px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.botoes button img, .botoes a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+/* Cores */
+.botoes button:hover, .botoes a:hover{
+    background-color: #dbeaf4;
+    border: 1px solid #699ebf;
+    border-top:1px solid #aabbcf;
+    border-left:1px solid #aabbcf;
+    color:#336699;
+}
+.botoes a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+
+/* Positivo */
+.botoes button.positivo, .botoes a.positivo{
+    color:#529214;
+}
+.botoes a.positivo:hover, button.positivo:hover{
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+.botoes a.positivo:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}
+
+/* Negativo */
+.botoes a.negativo, button.negativo{
+    color:#d12f19;
+}
+.botoes a.negativo:hover, button.negativo:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+.botoes a.negativo:active{
+    background-color:#d12f19;
+    border:1px solid #d12f19;
+    color:#fff;
+}
+
+#corpo div.botao-grande {
+    margin: 0 16px 10px 0;
+    text-align: center;
+    float: left;
+}
+
+#corpo div.botao-grande a{
+    width: 150px;
+    height: 80px;
+    padding: 5px;
+    display: block;
+    font-weight: bold;
+    font-size: 110%;
+    background-color: #f2f2ff;
+    border: 1px solid #225;
+    -moz-border-radius: 1em;
+    line-height: 80px;
+    position: relative;
+    top: -50%;
+}
+
+#corpo div.botao-grande a:hover{
+    background-color: #f9f9ff;
+}
+
+/* Defini��es de caixas de aviso */
+.erro {
+    color: #aa2222;
+    font-size: 13px;
+    font-weight: bold;
+    width: 97%;
+    background-color: #ffdddd;
+    border: 1px solid #aa2222;
+    -moz-border-radius: .2em;
+    padding: 6px;
+    margin-bottom: 8px;
+}
+.mensagem {
+    font-size: 13px;
+    font-weight: bold;
+    width: 97%;
+    background-color: #dbeaf4;
+    border: 1px solid #699ebf;
+    -moz-border-radius: .2em;
+    padding: 6px;
+    margin-bottom: 8px;
+}
+
+.nobold {
+    font-weight: normal;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+.dataTables_wrapper {
+	position: relative;
+	min-height: 312px;
+	_height: 312px;
+	clear: both;
+}
+.dataTables_length {
+	width: 40%;
+	float: left;
+    padding: 4px;
+}
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+    padding: 4px;
+}
+.dataTables_info {
+	width: 60%;
+	float: left;
+    height: 30px;
+    padding: 5px;
+}
+.dataTables_paginate {
+	width: 44px;
+	* width: 50px;
+	float: right;
+	text-align: right;
+    padding: 5px;
+}
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+	background-color: #fff;
+}
+.paginate_disabled_previous {
+	background-image: url('../images/back_disabled.jpg');
+}
+.paginate_enabled_previous {
+	background-image: url('../images/back_enabled.jpg');
+}
+.paginate_disabled_next {
+	background-image: url('../images/forward_disabled.jpg');
+}
+.paginate_enabled_next {
+	background-image: url('../images/forward_enabled.jpg');
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	background-color: #fff;
+    border: 1px solid #ccc;
+}
+table.display thead th {
+	padding: 3px 10px;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	cursor: pointer;
+	* cursor: hand;
+}
+table.display tfoot th {
+	padding: 3px 10px;
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+table.display tr.heading2 td {
+	border-bottom: 1px solid #aaa;
+}
+table.display td {
+	padding: 3px 10px;
+}
+table.display td.center {
+	text-align: center;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+.sorting_asc {
+	background: url('../images/sort_asc.jpg') no-repeat center right;
+}
+.sorting_desc {
+	background: url('../images/sort_desc.jpg') no-repeat center right;
+}
+.sorting {
+	background: url('../images/sort_both.jpg') no-repeat center right;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+tr.odd {
+	background-color: #dbeaf4;
+}
+tr.even {
+	background-color: #e8f0f6;
+}

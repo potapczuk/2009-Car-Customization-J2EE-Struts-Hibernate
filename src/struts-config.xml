@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<form-beans>
+       <form-bean name="LoginForm"
+			type="br.com.diegoliveira.indiana.form.LoginForm" />
+       <form-bean name="MarcaForm"
+			type="br.com.diegoliveira.indiana.form.MarcaForm" />
+       <form-bean name="CarroForm"
+			type="br.com.diegoliveira.indiana.form.CarroForm" />
+       <form-bean name="ModeloForm"
+			type="br.com.diegoliveira.indiana.form.ModeloForm" />
+       <form-bean name="PinturaForm"
+			type="br.com.diegoliveira.indiana.form.PinturaForm" />
+       <form-bean name="TipoDePinturaForm"
+			type="br.com.diegoliveira.indiana.form.TipoDePinturaForm" />
+       <form-bean name="AcessorioForm"
+			type="br.com.diegoliveira.indiana.form.AcessorioForm" />
+       <form-bean name="TipoDeAcessorioForm"
+			type="br.com.diegoliveira.indiana.form.TipoDeAcessorioForm" />
+       <form-bean name="PedidoForm"
+			type="br.com.diegoliveira.indiana.form.PedidoForm" />
+       <form-bean name="UsuarioForm"
+			type="br.com.diegoliveira.indiana.form.UsuarioForm" />
+
+       <form-bean name="MonteForm"
+			type="br.com.diegoliveira.indiana.form.MonteForm" />
+
+		<form-bean name="ListaForm"
+			type="org.apache.struts.action.DynaActionForm">
+			<form-property name="acao" type="java.lang.String"
+				initial="" />
+		</form-bean>
+	</form-beans>
+
+    <global-forwards>
+        <forward name="carros" path="/Carro.do"/>
+        <forward name="adm.erro" path="/Carro.do"/>
+        <forward name="login" path="/Login.do"/>
+    </global-forwards>
+
+	<action-mappings>
+		<action path="/Marca" name="MarcaForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.MarcaAction"
+			scope="request" validate="false" input="marca">
+			<forward name="listar" path=".adm.marca" />
+			<forward name="adicionar" path=".adm.marcaForm" />
+            <forward name="editar" path=".adm.marcaForm" />
+            <forward name="cancelar" path=".adm.marca" />
+		</action>
+
+        <action path="/Carro" name="CarroForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.CarroAction"
+			scope="request" validate="false" input="carro">
+			<forward name="listar" path=".adm.carro" />
+			<forward name="adicionar" path=".adm.carroForm" />
+            <forward name="editar" path=".adm.carroForm" />
+            <forward name="cancelar" path=".adm.carro" />
+		</action>
+
+        <action path="/Modelo" name="ModeloForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.ModeloAction"
+			scope="request" validate="false" input="modelo">
+			<forward name="listar" path=".adm.modelo" />
+			<forward name="adicionar" path=".adm.modeloForm" />
+            <forward name="editar" path=".adm.modeloForm" />
+            <forward name="cancelar" path=".adm.modelo" />
+		</action>
+
+        <action path="/Pintura" name="PinturaForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.PinturaAction"
+			scope="request" validate="false" input="pintura">
+			<forward name="listar" path=".adm.pintura" />
+			<forward name="adicionar" path=".adm.pinturaForm" />
+            <forward name="editar" path=".adm.pinturaForm" />
+            <forward name="cancelar" path=".adm.pintura" />
+		</action>
+
+        <action path="/TipoDePintura" name="TipoDePinturaForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.TipoDePinturaAction"
+			scope="request" validate="false" input="tipoDePintura">
+			<forward name="listar" path=".adm.tipoDePintura" />
+			<forward name="adicionar" path=".adm.tipoDePinturaForm" />
+            <forward name="editar" path=".adm.tipoDePinturaForm" />
+            <forward name="cancelar" path=".adm.tipoDePintura" />
+		</action>
+
+        <action path="/Acessorio" name="AcessorioForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.AcessorioAction"
+			scope="request" validate="false" input="acessorio">
+			<forward name="listar" path=".adm.acessorio" />
+			<forward name="adicionar" path=".adm.acessorioForm" />
+            <forward name="editar" path=".adm.acessorioForm" />
+            <forward name="cancelar" path=".adm.acessorio" />
+		</action>
+
+        <action path="/TipoDeAcessorio" name="TipoDeAcessorioForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.TipoDeAcessorioAction"
+			scope="request" validate="false" input="tipoDeAcessorio">
+			<forward name="listar" path=".adm.tipoDeAcessorio" />
+			<forward name="adicionar" path=".adm.tipoDeAcessorioForm" />
+            <forward name="editar" path=".adm.tipoDeAcessorioForm" />
+            <forward name="cancelar" path=".adm.tipoDeAcessorio" />
+		</action>
+
+        <action path="/Usuario" name="UsuarioForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.UsuarioAction"
+			scope="request" validate="false" input="usuario">
+			<forward name="listar" path=".adm.usuario" />
+			<forward name="adicionar" path=".adm.usuarioForm" />
+            <forward name="editar" path=".adm.usuarioForm" />
+            <forward name="cancelar" path=".adm.usuario" />
+		</action>
+
+        <action path="/Pedido" name="PedidoForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.PedidoAction"
+			scope="request" validate="false" input="pedido">
+			<forward name="listar" path=".adm.pedido" />
+            <forward name="visualizar" path=".adm.pedidoVisualizar" />
+            <forward name="cancelar" path=".adm.pedido" />
+		</action>
+
+        <action path="/Login" name="LoginForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.LoginAction"
+			scope="request" validate="false" input="login">
+			<forward name="login" path=".adm.login" />
+            <forward name="cancelar" path=".adm.login" />
+		</action>
+
+        <action path="/Home" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.HomeAction"
+			scope="request" validate="false">
+			<forward name="home" path=".site.home" />
+		</action>
+
+        <action path="/Monte" name="MonteForm" parameter="acao"
+			type="br.com.diegoliveira.indiana.action.MonteAction"
+			scope="session" validate="false">
+			<forward name="escolherCarro" path=".site.monte.carro" />
+            <forward name="escolherModelo" path=".site.monte.modelo" />
+            <forward name="escolherPintura" path=".site.monte.pintura" />
+            <forward name="escolherAcessorios" path=".site.monte.acessorios" />
+            <forward name="enviarPedido" path=".site.monte.pedido" />
+            <forward name="pedidoEnviado" path=".site.monte.pedido.enviado" />
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="MessageResources" />
+
+    <plug-in className="org.apache.struts.tiles.TilesPlugin">
+        <set-property property="definitions-config" value="/WEB-INF/classes/tiles-defs.xml"/>
+        <!--<set-property property="moduleAware" value="true"/>
+        <set-property property="definitions-parser-validate" value="true"/>-->
+    </plug-in>
+
+</struts-config>
